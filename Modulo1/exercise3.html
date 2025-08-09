@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-
+width, initial-scale=1.0">
+
+<title>Module 1 Exercise 3</title>
+<style>
+  /* image of the background */
+body {
+  background-image: url("https://res.cloudinary.com/highereducation/image/upload/c_scale,w_750/f_auto,fl_lossy,q_auto:eco/v1532988864/TheBestColleges.org/images/study-notebooks.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+}
+
+h1 { 
+  color: blue;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
+}    
+
+p {
+  color: rgb(35, 36, 35);
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+.button {
+  background-color: #5a5c68;
+  border: none;
+  color: rgb(247, 243, 243);
+  padding: 15px 25px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <h1>Study</h1>
+
+  <div id="column1">
+    <p id="Paragraph">“You don’t have to be great to start. But you have to start to be great.”</p>
+    <button onclick="change()">Click Me</button>
+  </div>
+
+
+
+<script>
+
+  const col1 = document.getElementById("column1");
+
+  function change() {
+    col1.style.padding = "20px";
+    col1.style.borderRadius = "10px";
+    col1.style.color = "blue";
+    col1.style.fontFamily = "Arial, sans-serif";
+  col1.innerText = "Work as hard as you can and then be happy in the knowledge you couldn’t have done any more.";
+}
+</script>
+</html>

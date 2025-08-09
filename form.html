@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="formSubmit(event)">
+      <div>
+            <label>FirstName</label>
+            <input id="FirstName" type="text" />
+      </div>
+      <div>
+            <label>LastName</label>
+            <input id="LastName" type="text" />
+      </div>
+        
+        <button type="submit">submit</button>
+    </form>
+  </body>
+  <script>
+    function formSubmit(event) {
+      event.preventDefault();
+
+      const firstName = document.getElementById("FirstName").value;
+      const lastName = document.getElementById("LastName").value;
+
+      console.log("Click", document.getElementById("FirstName").value);
+      sayHi(firstName, lastName);
+     }
+     function sayHi(fn, ln) {
+        console.log(`Hi, ${fn} ${ln}`);
+     }
+  </script>
+</html>
